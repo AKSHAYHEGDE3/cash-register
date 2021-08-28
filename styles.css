@@ -1,0 +1,31 @@
+body{
+    background-color: #272727;
+}
+.container{
+    text-align: center;
+    color: #408140;
+}
+
+input{
+    border: 3px solid #408140 ;
+}
+
+#amount-box{
+    margin-top: 2rem;
+}
+
+#cash-box{
+    margin-top: 2rem;
+}
+
+.btn{
+    margin-top: 1rem ;
+}
+
+#returnCash{
+    margin-top: 2rem;
+}
+
+.table{
+    margin-top: 2rem;
+}
