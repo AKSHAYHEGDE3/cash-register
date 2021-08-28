@@ -1,1 +1,1 @@
-# cash-register
+https://cash-register-manager-333.netlify.app
