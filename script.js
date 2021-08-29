@@ -28,16 +28,13 @@ nextBtn.addEventListener("click", () => {
 });
 
 submitBtn.addEventListener("click", () => {
-    console.log(`cahsamount-${cashAmount.value}`)
-    console.log(`billamount-${billAmount.value}`)
-    console.log(cashAmount.value > billAmount.value)
-  if (isNaN(cashAmount.value) || cashAmount < 0) {
+  if (isNaN(Number(cashAmount.value)) || Number(cashAmount < 0)) {
     msg.innerText = "invalid cash amount";
     console.log('invalid')
   } else {
-        if (billAmount.value <= cashAmount.value  ) {
+        if (Number(billAmount.value) <= Number(cashAmount.value)  ) {
             msg.innerText = "";
-            const amountToBeReturned = cashAmount.value - billAmount.value;
+            const amountToBeReturned = Number(cashAmount.value) - Number(billAmount.value);
             returnCash.innerText = `Return cash - $${amountToBeReturned}`;
             console.log(amountToBeReturned)
             console.log(amountToBeReturned);
