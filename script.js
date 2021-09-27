@@ -18,7 +18,7 @@ function calculateChange(returningAmount) {
 
 cashBox.style.display = "none";
 nextBtn.addEventListener("click", () => {
-  if (isNaN(billAmount.value) || billAmount < 0) {
+  if (isNaN(billAmount.value) || billAmount.value < 0) {
     msg.innerText = "Inavlid bill amount";
     cashBox.style.display = "none";
   } else {
@@ -28,7 +28,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 submitBtn.addEventListener("click", () => {
-  if (isNaN(Number(cashAmount.value)) || Number(cashAmount < 0)) {
+  if (isNaN(Number(cashAmount.value)) || Number(cashAmount.value < 0)) {
     msg.innerText = "invalid cash amount";
     console.log('invalid')
   } else {
